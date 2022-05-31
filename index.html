@@ -10,6 +10,7 @@
       <span class="headerItem">Recommendations</span>
       <span class="headerItem">Gallery</span>
     </div>
+
     <div id="aboutMePage">
       <h1>About Me</h1>
       <div id="aboutMeContent">
@@ -27,9 +28,50 @@
       </div>
       <img src="moopfp5.jpg" alt="Selfie of me, Jamie Wynter Oppel">
     </div>
+
     <div id="friendApplicationPage">
-      
+      <form action="/form-handling-url" method="post">
+        <fieldset>
+          <legend>Friend Form</legend> 
+
+          <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="first_name">
+          </div>
+          <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="last_name">
+          </div>
+          <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" max="150">
+          </div>
+          <div>
+            <p>Gender</p>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="Male" class="radios">Male</label>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female" class="radios">Female</label>
+            <input type="radio" id="Other" name="gender" value="Other">
+            <label for="Other" class="radios">Other</label>
+          </div>
+          <div>
+            <label for="aboutYourself">Tell me about yourself</label>
+            <textarea id="aboutYourself" name="aboutYourself"></textarea>
+          </div>
+          <div>
+            <input type="checkbox" id="yesKiss" name="yesKiss" value="yes">
+            <label for="yesKiss">yes</label>
+            <input type="checkbox" id="heckYesKiss" name="heckYesKiss" value="heckYes">
+            <label for="heckYesKiss">heck yes</label>
+          </div>
+          <div>
+            <button type="submit" id="submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
     </div>
+    
     <div id="recommendationsPage"></div>
     <div id="galleryPage"></div>
   </body>
