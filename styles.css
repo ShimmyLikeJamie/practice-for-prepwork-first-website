@@ -3,9 +3,6 @@ html {
   font-family: cursive;
 }
 
-#friendApplicationPage {
-  display: none;
-}
 
 #recommendationsPage {
   display: none;
@@ -23,6 +20,7 @@ html {
 }
 
 #aboutMePage {
+  display: none;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   text-align: center;
@@ -71,4 +69,62 @@ html {
   margin-top: 5%;
   border: 10px solid rgba(255, 133, 216, 1);
   border-radius: 5em;
+}
+
+#friendApplicationPage {
+  
+  box-sizing: border-box;
+  text-align: center;
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+fieldset {
+  display:grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  color:rgba(255, 133, 216, 1);
+  margin-top: 25px;
+  border: 10px solid rgba(255, 133, 216, 1);
+  border-radius: 5em;
+}
+
+fieldset div {
+  grid-column: 2 / 3;
+}
+
+label {
+  display: block;
+}
+
+.age {
+  display: inline-block;
+  margin-top: 3%;
+}
+
+#genderP {
+  margin-bottom: 1%;
+}
+
+.genders {
+  display: inline-block;
+}
+
+.radios {
+  display: inline-block;
+}
+
+#aboutSelf {
+  margin-top: 2%;
+}
+
+#kissP {
+  margin-top: 2%;
+}
+
+#kissQs input, #kissQs label {
+  display: inline-block;
+}
+
+button {
+  margin-top: 2%;
 }
