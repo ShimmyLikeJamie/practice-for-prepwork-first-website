@@ -129,6 +129,14 @@ label {
 
 button {
   margin-top: 2%;
+  background-color:rgb(13, 69, 86);
+  color: rgba(255, 133, 216, 1);
+  font-size: 1em;
+  border-radius: 2em;
+}
+
+button:hover {
+  background-color: rgb(33, 105, 128);
 }
 
 #ahegao {
