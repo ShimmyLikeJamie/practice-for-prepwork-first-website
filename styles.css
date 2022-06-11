@@ -5,7 +5,34 @@ html {
 
 
 #recommendationsPage {
-  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+#recommendationsPage h1 {
+  margin-bottom: 0;
+}
+
+ul {
+  text-align: left;
+}
+
+#fiveRecommends, #socialMedia {
+  box-sizing: border-box;
+  border: 10px solid rgba(255, 133, 216, 1);
+  border-radius: 1em;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: 2%;
+}
+
+#recommendListWrapper, #socialMediaWrapper {
+  display: grid;
+  grid-template-columns: repeat(1fr, 5);
+}
+
+#recommendListWrapper ul, #socialMediaWrapper ul {
+  grid-column: 2 / 3;
 }
 
 #galleryPage {
@@ -21,7 +48,7 @@ html {
 
 #aboutMePage {
   display: none;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1fr, 4);
   width: 100%;
   text-align: center;
   color: rgba(255, 133, 216, 1);
