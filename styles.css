@@ -11,6 +11,11 @@ html {
 
 #recommendationsPage h1 {
   margin-bottom: 0;
+  color:rgba(255, 133, 216, 1);
+}
+
+#recommendationsPage a {
+  color: rgba(255, 133, 216, 1);
 }
 
 ul {
@@ -24,6 +29,8 @@ ul {
   width: 75%;
   margin-left: 12.5%;
   margin-top: 2%;
+  min-height: 300px;
+  max-height: 400px;
 }
 
 #recommendListWrapper, #socialMediaWrapper {
@@ -178,4 +185,14 @@ button:hover {
   height: 400px;
   left: 5%;
   border-radius: 5em;
+}
+
+.ahegao{
+  position: absolute;
+  opacity: .25;
+  width: 72.5%;
+  height: 280px;
+  left: 13.75%;
+  border-radius: 5em;
+  z-index: -1;
 }
