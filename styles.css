@@ -19,6 +19,11 @@ html {
   color: rgba(255, 133, 216, 1);
 }
 
+#galleryPage {
+  text-align: center;
+  color: rgba(255, 133, 216, 1);
+}
+
 ul {
   text-align: left;
 }
@@ -43,8 +48,16 @@ ul {
   grid-column: 2 / 3;
 }
 
-#galleryPage {
-  display: none;
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+}
+
+.galleryImage {
+  width: 75%;
+  height: 50%;
 }
 
 #header {
